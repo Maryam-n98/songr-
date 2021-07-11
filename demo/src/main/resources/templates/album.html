@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"><head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link th:href="@{/album.css}" rel="stylesheet"/>
+
+</head>
+<body>
+<h1>Must Popular Amr Diab Albums</h1>
+<div th:each="album:${album}">
+  <p th:text="'Title:  '+'   '+${album.title}"></p>
+  <p th:text="${'artist:  '+'  '+album.artist}"></p>
+  <p th:text="${'songCount:  '+'  '+album.songCount}"></p>
+    <p th:text="'sec:  '+'   '+${album.length}"></p>
+  <img th:src="@{${album.imageUrl}}"/>
+</div>
+</body>
+</html>

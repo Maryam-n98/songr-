@@ -1,10 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
+<html xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+  <link th:href="@{/newAlbum.css}" rel="stylesheet"/>
+
 </head>
 <body>
+<h1>Add Your Album</h1>
 <form action="/albums" method="post">
   <label>Title</label>
   <input type="text" name="title" />

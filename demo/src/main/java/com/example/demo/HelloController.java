@@ -46,7 +46,7 @@ public class HelloController {
 
     @GetMapping("/addYourAlbum")
     public String addYourAlbum() {
-        return "newAlbums.html";
+        return "newAlbums";
     }
 
     @PostMapping("/albums")
@@ -56,7 +56,7 @@ public class HelloController {
                                  @RequestParam(value="imageUrl") String imageUrl,
                                  @RequestParam(value="length") long length) {
         Album album = new Album(title,artist,songCount,imageUrl,length);
-        albumRepository.save(album);
+         albumRepository.save(album);
         return  new RedirectView("/albums");
     }
 }

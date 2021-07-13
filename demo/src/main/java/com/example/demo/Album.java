@@ -20,7 +20,9 @@ public class Album {
         this.imageUrl = imageUrl;
         this.length = length;
     }
+public Album(){
 
+}
     public String getTitle() {
         return title;
     }

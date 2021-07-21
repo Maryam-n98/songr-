@@ -14,13 +14,32 @@ in HelloController Class
 
 First I used @Controller  to implement Web Application, its annotation indicates that a particular class serves the role of a controller.
 
-then I used @GetMapping to put the routes 
+## I used @GetMapping to put the routes 
+
+### Routes 
+
+#### /hello 
+[http://localhost:8080/hello](http://localhost:8080/hello)
+
  - String helloWorld() it Return hello.html  in /hello route to show Hello World 
- -  String capitalize()Its have @RequestParam to read a parameter and model.addAttribute to used the name as a query and defulte vale World if we havent a query, and it turnsed words into UPPER CASE. 
- -  In root route its return index.html by defulte and its return h1 and image tage with a little CSS.
- - String albums () it have one parameter Model to return an array that contains three albums, and then displayed  those three on the page .
- - In all pages you can see the navbar and this have all links to all pages.
+
+#### capitalize/{id}
+[http://localhost:8080/capitalize/hello](http://localhost:8080/capitalize/hello)
+
+ -  String capitalize() I used the @PathVariable annotation to extract the templated part of the URI, represented by the variable {id} and make the id toUpperCase.
  
+
+ #### /
+[http://localhost:8080/](http://localhost:8080/)
+ -  In root route its return index.html by defulte and its return h1 and image tage with a little CSS.
+
+#### /albums 
+[http://localhost:8080/albums](http://localhost:8080/albums)
+
+ - String albums () it have one parameter Model to return an array that contains three albums, and then displayed  those three on the page .
+
+ - In all pages you can see the navbar and this have all links to all pages.
+
 
 
 

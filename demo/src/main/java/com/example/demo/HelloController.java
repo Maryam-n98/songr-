@@ -17,7 +17,7 @@ public class HelloController {
 
 
     @GetMapping("/capitalize/{id}")
-    String hello(Model model, @PathVariable("id") String id) {
+    String capitalize(Model model, @PathVariable("id") String id) {
         id.toUpperCase();
         model.addAttribute("name",id.toUpperCase());
         return "HelloWord";

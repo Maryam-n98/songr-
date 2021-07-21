@@ -1,9 +1,43 @@
-body {
-  background-color: white;
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #7C9473;
 }
-h1 {
-  color: blue;
+
+li {
+  float: left;
 }
-p {
-  color: red;
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #798777;
+}
+h1{
+color:#798777;
+}
+img{
+width:700px;
+hight:700px
+
+ display: block;
+  margin-left: 420px;
+  margin-right: auto;
+
+}
+h1{
+  text-align: center;
+  color:#798777;
+}
+p{
+text-align:center;
+color:#A2B29F;
 }

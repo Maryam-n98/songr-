@@ -15,6 +15,9 @@ public class Album {
         this.length = length;
     }
 
+    public Album() {
+    }
+
     public String getTitle() {
         return title;
     }

@@ -30,6 +30,12 @@
 <h1>Must Popular Amr Diab Albums</h1>
 <div th:each="album:${album}">
   <p th:text="'Title:  '+'   '+${album.title}"></p>
+
+<h1>Your Albums</h1>
+<div th:each="album:${albums}">
+    <p>Album ID: <span th:text=${album.id}></spanth:text></span></p>
+
+    <p th:text="'Title:  '+'   '+${album.title}"></p>
   <p th:text="${'artist:  '+'  '+album.artist}"></p>
   <p th:text="${'songCount:  '+'  '+album.songCount}"></p>
     <p th:text="'sec:  '+'   '+${album.length}"></p>

@@ -1,20 +1,20 @@
 # songr-
 
-### Architecture
+## Architecture
 The programing languages used to build this project are Java, HTML and CSS.
 
-### Overview
+## Overview
 
  in this project, I Used the Spring Initializr to create a new application with artifact songr with Web and Thymeleaf and Devtools dependencies. 
  First  I downloaded the zip file and extract the directory it contains. then added it to my repo, and statrted.
 
-### Methods
+## Methods
 
 in HelloController Class 
 
 First I used @Controller  to implement Web Application, its annotation indicates that a particular class serves the role of a controller.
 
-## I used @GetMapping to put the routes 
+#### I used @GetMapping to put the routes 
 
 ### Routes 
 

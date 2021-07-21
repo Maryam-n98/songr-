@@ -3,9 +3,34 @@
     <meta charset="UTF-8">
     <title>Title</title>
     <link th:href="@{/album.css}" rel="stylesheet"/>
-
+    <link th:href="@{/style.css}" rel="stylesheet"/>
 </head>
 <body>
+<header>
+    <nav  th:fragment="header">
+
+        <ul class="nav navbar-nav">
+            <li>
+                <a class="navbar-brand" href="/">Home Page</a>
+            </li>
+            <li>
+                <a class="navbar-brand" href="/hello">Hello Page</a>
+            </li>
+            <li>
+                <a href="/capitalize/hello" >Capitalize</a>
+            </li>
+            <li>
+                <a href="/albums" >Albums</a>
+            </li>
+        </ul>
+
+
+    </nav>
+</header>
+<h1>Must Popular Amr Diab Albums</h1>
+<div th:each="album:${album}">
+  <p th:text="'Title:  '+'   '+${album.title}"></p>
+
 <h1>Your Albums</h1>
 <div th:each="album:${albums}">
     <p>Album ID: <span th:text=${album.id}></spanth:text></span></p>

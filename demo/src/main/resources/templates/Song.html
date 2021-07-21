@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<html xmlns:th="http://www.thymeleaf.org">
+<html xmlns:th="http://www.thymeleaf.org"><head>
 <head>
     <meta charset="UTF-8">
-    <title>Hello Word</title>
+    <title>Title</title>
     <link th:href="@{/style.css}" rel="stylesheet"/>
 </head>
 <body>
@@ -27,7 +27,12 @@
 
     </nav>
 </header>
-<h1>Capitalize</h1>
-<p  th:text="${name}"></p>
+<div th:each="song : ${songs}">
+  <p >Song ID: <span th:text=${song.id}></span></p>
+  <p>Song Title: <span th:text=${song.title}></span> </p>
+  <p>Track Number: <span th:text=${song.trackNumber}></span></p>
+  <p>Song Length: <span th:text=${song.length}></span></p>
+</div>
+
 </body>
 </html>

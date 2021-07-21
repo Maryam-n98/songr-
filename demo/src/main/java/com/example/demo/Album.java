@@ -22,7 +22,10 @@ public class Album {
     }
 public Album(){
 
-}
+
+    public Album() {
+    }
+
     public String getTitle() {
         return title;
     }

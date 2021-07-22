@@ -4,27 +4,66 @@
     <meta charset="UTF-8">
     <title>Title</title>
   <link th:href="@{/newAlbum.css}" rel="stylesheet"/>
+  <link th:href="@{/style.css}" rel="stylesheet"/>
+
 
 </head>
 <body>
+<header>
+  <nav  th:fragment="header">
+
+    <ul class="nav navbar-nav">
+      <li>
+        <a class="navbar-brand" href="/">Home Page</a>
+      </li>
+      <li>
+        <a class="navbar-brand" href="/hello">Hello Page</a>
+      </li>
+      <li>
+        <a href="/capitalize/hello" >Capitalize</a>
+      </li>
+      <li>
+        <a href="/addYourAlbum" >Add Your Album</a>
+      </li>
+      <li>
+        <a href="/albums" >Albums</a>
+      </li>
+
+    </ul>
+  </nav>
+</header>
 <h1>Add Your Album</h1>
-<form action="/albums" method="post">
-  <label>Title</label>
-  <input type="text" name="title" />
+<div class="form-style-3">
+  <form action="/albums" method="post">
+    <fieldset><legend>ADD YOUR FAVORITE ALBUM</legend>
+      <label ><span>Title <span class="required">*</span></span><input type="text" class="input-field" name="title" value="" required="required" /></label>
+      <label ><span>Artist <span class="required">*</span></span><input type="text" class="input-field" name="artist" value="" required="required" /></label>
+      <label ><span>Song Count <span class="required">*</span></span><input type="number" class="input-field" name="songCount" required="required"  /></label>
+      <label ><span>Length <span class="required">*</span></span><input type="number" class="input-field" name="length"  required="required" /></label>
+      <label ><span>Image URL <span class="required">*</span></span><input type="text" class="input-field" name="imageUrl" required="required" /></label>
 
-  <label>Artist</label>
-  <input type="text" name="artist" />
+      <label><span> </span><input type="submit" value="Add Album!" /></label>
+    </fieldset>
 
-  <label>Songs Count</label>
-  <input type="number" name="songCount" />
+  </form>
+</div>
+<!--<form action="/albums" method="post">-->
+<!--  <label>Title</label>-->
+<!--  <input type="text" name="title" />-->
 
-  <label>Length</label>
-  <input type="number" name="length" />
+<!--  <label>Artist</label>-->
+<!--  <input type="text" name="artist" />-->
 
-  <label>Image URL</label>
-  <input type="text" name="imageUrl" />
+<!--  <label>Songs Count</label>-->
+<!--  <input type="number" name="songCount" />-->
 
-  <input type="submit" value="Add Album!">
-</form>
+<!--  <label>Length</label>-->
+<!--  <input type="number" name="length" />-->
+
+<!--  <label>Image URL</label>-->
+<!--  <input type="text" name="imageUrl" />-->
+
+<!--  <input type="submit" value="Add Album!">-->
+<!--</form>-->
 </body>
 </html>

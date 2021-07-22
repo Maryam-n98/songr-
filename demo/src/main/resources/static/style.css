@@ -3,7 +3,7 @@ ul {
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: #7C9473;
+  background-color: #F3BAD6;
 }
 
 li {
@@ -12,17 +12,17 @@ li {
 
 li a {
   display: block;
-  color: white;
+  color: #E05297;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
 }
 
 li a:hover {
-  background-color: #798777;
+  background-color: #FCEEF5;
 }
 h1{
-color:#798777;
+color:#F3BAD6;
 }
 img{
 width:700px;
@@ -35,9 +35,9 @@ hight:700px
 }
 h1{
   text-align: center;
-  color:#798777;
+  color:#E05297;
 }
 p{
 text-align:center;
-color:#A2B29F;
+color:#EA86B6;
 }

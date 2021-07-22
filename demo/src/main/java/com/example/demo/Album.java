@@ -20,53 +20,53 @@ public class Album {
         this.imageUrl = imageUrl;
         this.length = length;
     }
-public Album(){
-
 
     public Album() {
+
+
     }
 
-    public String getTitle() {
-        return title;
-    }
+        public String getTitle () {
+            return title;
+        }
 
-    public void setTitle(String title) {
-        this.title = title;
-    }
+        public void setTitle (String title){
+            this.title = title;
+        }
 
-    public String getArtist() {
-        return artist;
-    }
+        public String getArtist () {
+            return artist;
+        }
 
-    public void setArtist(String artist) {
-        this.artist = artist;
-    }
+        public void setArtist (String artist){
+            this.artist = artist;
+        }
 
-    public int getSongCount() {
-        return songCount;
-    }
+        public int getSongCount () {
+            return songCount;
+        }
 
-    public void setSongCount(int songCount) {
-        this.songCount = songCount;
-    }
+        public void setSongCount ( int songCount){
+            this.songCount = songCount;
+        }
 
-    public String getImageUrl() {
-        return imageUrl;
-    }
+        public String getImageUrl () {
+            return imageUrl;
+        }
 
-    public void setImageUrl(String imageUrl) {
-        this.imageUrl = imageUrl;
-    }
+        public void setImageUrl (String imageUrl){
+            this.imageUrl = imageUrl;
+        }
 
-    public long getLength() {
-        return length;
-    }
+        public long getLength () {
+            return length;
+        }
 
-    public void setLength(long length) {
-        this.length = length;
-    }
+        public void setLength ( long length){
+            this.length = length;
+        }
 
-    public Long getId() {
-        return id;
+        public Long getId () {
+            return id;
+        }
     }
-}

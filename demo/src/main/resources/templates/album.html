@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html xmlns:th="http://www.thymeleaf.org"><head>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
     <meta charset="UTF-8">
     <title>Title</title>
     <link th:href="@{/album.css}" rel="stylesheet"/>
@@ -25,6 +26,12 @@
             <li>
                 <a href="/albums" >Albums</a>
             </li>
+            <li>
+                <a href="/songs" >Song</a>
+            </li>
+            <li>
+            <a href="/addSong" >Add Song</a>
+        </li>
         </ul>
     </nav>
 </header>
@@ -37,6 +44,9 @@
     <p th:text="${'songCount:  '+'  '+album.songCount}"></p>
     <p th:text="'sec:  '+'   '+${album.length}"></p>
     <img th:src="@{${album.imageUrl}}"/>
+    <div th:each="song: ${album.songs}">
+        <p th:text="${song.title} + ': ' + ${song.length} + ' seconds'"></p>
+    </div>
 </div>
 </body>
 </html>

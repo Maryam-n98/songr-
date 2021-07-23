@@ -45,5 +45,4 @@ public class HelloControllerTest {
         this.mockMvc.perform(get("/hello")).andDo(print()).andExpect(status().isOk())
                 .andExpect(content().string(containsString("Hello World")));
     }
-
-    }
+}

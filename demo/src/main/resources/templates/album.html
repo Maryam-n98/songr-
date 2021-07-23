@@ -45,7 +45,7 @@
     <p th:text="'sec:  '+'   '+${album.length}"></p>
     <img th:src="@{${album.imageUrl}}"/>
     <div th:each="song: ${album.songs}">
-        <p th:text="${song.title} + ': ' + ${song.length} + ' seconds'"></p>
+        <p th:text=" 'Songs: ' + ${song.title} + ': ' + ${song.length} + ' Seconds'"></p>
     </div>
 </div>
 </body>

@@ -87,3 +87,25 @@ spring.jpa.properties.hibernate.format_sql=true
 spring.jpa.properties.hibernate.jdbc.lob.non_contextual_creation=true
 spring.jpa.database-platform=org.hibernate.dialect.PostgreSQL9Dialect
 
+
+## LAB 13 :
+
+#### /addSong 
+[http://localhost:8080/addSong](http://localhost:8080/addSong)
+
+- I used **@GetMapping** in  public String getAddSong()  that will take us to rout /addSong that take to newSong.html having input form in action route /songs and method post 
+I used required="required" to cant submit with out fill it out and dont git an error and you will add a Sond by album Id so it should have an album in what Id you add 
+Else if you havent an album Id you will have an error.html Page that till you should try again 
+I make it by add this line in application proparites **server.error.whitelabel.enabled=false** 
+By make Error Controller and it will take you to error route and it render error.html contact inside it you will have a link to bake to home bage 
+
+
+#### /songs 
+[http://localhost:8080/songs](http://localhost:8080/songs)
+
+- after fill the form and submite it will take the action in this form to route songs that will have **@PostMapping** to take a data and fill it in song.html and if you bake to Albums route ypu will have all your songs under the album you add this songs for it 
+
+I make this by @OneToMany in album and have list type Song 
+and in Song by @ManyToOne this will make a relationship between Albums and Songs, that mean you cant add song for any album before add album else you will have an error bage.
+
+Here you can see now we have album and song in maryam database ![image](/img/2021-07-24.png)
